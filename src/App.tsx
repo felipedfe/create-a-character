@@ -1,24 +1,24 @@
 import Face from "./components/Face/Face";
 import ChooseAttr from "./components/ChooseAttr/ChooseAttr";
-import styled from "styled-components";
-import { useSelector } from "react-redux";
-import { RootState } from "./store/store";
 import ChooseImage from "./components/ChooseImage/ChooseImage";
+import styled from "styled-components";
 
-// const MenuBtn = styled.button``;
+const CharacterSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* flex-wrap: wrap; */
+`
 
 function App() {
-  const attribute = useSelector(
-    (state: RootState) => state.chooseAttr.attribute
-  );
-
   return (
     <main>
-      <h1>Character Builder</h1>
-
-      <Face />
-      <ChooseAttr />
-      <ChooseImage />
+      <h1>Create a Character</h1>
+      <CharacterSection>
+        <Face />
+        <ChooseAttr />
+        <ChooseImage />
+      </CharacterSection>
     </main>
   );
 }

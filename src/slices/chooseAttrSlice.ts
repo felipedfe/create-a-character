@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  attribute: "",
+  attribute: "eyes",
 };
 
 export const chooseAttrSlice = createSlice({

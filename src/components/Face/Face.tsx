@@ -2,14 +2,12 @@ import Eyes from "../Eyes/Eyes";
 import Nose from "../Nose/Nose";
 import Mouth from "../Mouth/Mouth";
 import styled from "styled-components";
-import { useSelector } from "react-redux";
-import { RootState } from "../../store/store";
 
 const FaceSection = styled.section`
   position: relative;
-  /* background-image: url("images/face.png"); */
-  /* height: 500px; */
-  width: 550px;
+  /* width: 300px; */
+  /* height: ; */
+  width: 100%;
 `;
 
 const FaceContour = styled.img`

@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import attributeReducer from "../slices/chooseAttrSlice";
+import idReducer from "../slices/idSlice";
 
 export const store = configureStore({
     reducer: {
         chooseAttr: attributeReducer,
+        id: idReducer,
     },
 });
 

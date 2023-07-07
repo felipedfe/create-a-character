@@ -5,10 +5,10 @@ import { RootState } from "../../store/store";
 const EyesSection = styled.section`
   position: absolute;
   top: 10%;
-  left: 8%;
-  border: solid 2px cyan;
+  left: 10%;
   height: 25%;
   width: 80%;
+  /* border: solid 2px cyan; */
 `;
 
 const Image = styled.img`
@@ -16,14 +16,17 @@ const Image = styled.img`
 `
 
 function Eyes() {
-  const selectedAttr = useSelector(
-    (state: RootState) => state.chooseAttr.attribute
-  );
+  // const selectedAttr = useSelector(
+  //   (state: RootState) => state.chooseAttr.attribute
+  // );
+
+  const imageId = useSelector((state: RootState) => state.id.eyes);
+
 
   return (
     <>
       <EyesSection>
-        <Image alt="" src=""/>
+        <Image alt="" src={`images/eyes/eyes-${imageId}.png`} />
       </EyesSection>
     </>
   );
