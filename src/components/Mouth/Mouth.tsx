@@ -8,7 +8,7 @@ const MouthSection = styled.section`
   left: 10%;
   height: 25%;
   width: 80%;
-  border: solid 2px gray;
+  /* border: solid 2px gray; */
 `
 
 const Image = styled.img`
