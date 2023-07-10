@@ -2,34 +2,37 @@ import Face from "./components/Face/Face";
 import ChooseAttr from "./components/ChooseAttr/ChooseAttr";
 import ChooseImage from "./components/ChooseImage/ChooseImage";
 import styled from "styled-components";
-import underLine from "./assets/underline3.png";
+import underLine from "./assets/underline4.png";
+import logo from "./assets/logo.png";
 
 const Main = styled.main`
   width: 90%;
   height: 100vh;
   margin: auto;
   max-width: 1200px;
-  /* background-color: #ffdefe; */
-  /* opacity: 0.2; */
 `
 
 const TitleBox = styled.div`
   display: flex;
-  /* justify-content: center;
-  padding: 1.5rem 0; */
-  /* justify-content: center; */
   justify-content: center;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 `
 
 const TitleBackGround = styled.div`
   position: relative;
-  background-color: #fff;
 `
 
-const Title = styled.h1`
-  padding: 1rem;
-  text-align: center;
+// const Title = styled.h1`
+//   font-size: 4rem;
+//   font-family: 'Rampart One', cursive;
+//   padding: 1rem 0;
+//   text-align: center;
+// `
+
+const Logo = styled.img`
+  padding: 1rem 0;
+  width: 100%;
 `
 
 const Underline = styled.img`
@@ -43,12 +46,9 @@ const CharacterSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  /* height: 100vh; */
-  /* background-color: #ffc88d; */
-  /* max-width: 450px; */
 
-  @media all and (min-width: 480px) {
-    width: 420px;
+  @media all and (min-width: 450px) {
+    width: 380px;
     margin: auto;
   }
   
@@ -65,8 +65,8 @@ function App() {
     <Main>
       <TitleBox>
         <TitleBackGround>
-          <Title>Create a Character</Title>
-          <Underline src={underLine} />
+        <Logo src={logo}/>
+        <Underline src={underLine} />
         </TitleBackGround>
       </TitleBox>
       <CharacterSection>
