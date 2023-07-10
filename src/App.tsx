@@ -15,8 +15,8 @@ const Main = styled.main`
 const TitleBox = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 `
 
 const TitleBackGround = styled.div`
@@ -48,12 +48,12 @@ const CharacterSection = styled.section`
   gap: 1.5rem;
 
   @media all and (min-width: 450px) {
-    width: 380px;
+    width: 350px;
     margin: auto;
   }
   
   @media all and (min-width: 1024px) {
-    width: 850px;
+    width: 730px;
     flex-direction: row;
     align-items: center;
     height: auto;
@@ -65,8 +65,8 @@ function App() {
     <Main>
       <TitleBox>
         <TitleBackGround>
-        <Logo src={logo}/>
-        <Underline src={underLine} />
+          <Logo src={logo} />
+          <Underline src={underLine} />
         </TitleBackGround>
       </TitleBox>
       <CharacterSection>
