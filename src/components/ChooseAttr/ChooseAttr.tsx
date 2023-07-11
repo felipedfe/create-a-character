@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
-import { select, reset } from "../../slices/chooseAttrSlice";
+import { select } from "../../slices/chooseAttrSlice";
 import { RootState } from "../../store/store";
 
 const ChooseAttrSection = styled.section`
